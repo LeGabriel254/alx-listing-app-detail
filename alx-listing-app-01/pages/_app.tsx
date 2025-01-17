@@ -1,11 +1,19 @@
-import Layout from "@/components/layout/Layout";
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
+import { ReactNode } from "react";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
-export default function App({ Component, pageProps }: AppProps) {
+type LayoutProps = {
+  children: ReactNode;
+};
+
+const Layout = ({ children }: LayoutProps) => {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <>
+      <Header />
+      <main className="min-h-screen">{children}</main>
+      <Footer />
+    </>
   );
-}
+};
+
+export default Layout;

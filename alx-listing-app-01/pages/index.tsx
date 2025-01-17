@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import hero from  '@/public/hero-bg.jpg'
+// import hero from  '@/public/hero-bg.jpg'
 import FilterSection from "@/components/layout/FilterSection"
 
 export default function Home() {
@@ -10,14 +10,14 @@ export default function Home() {
      
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image
+        {/* <Image
           src={hero} 
           alt="Hero Background"
           layout="fill"
           objectFit="contain"
           quality={100}
           priority
-        />
+        /> */}
         <div className="absolute inset-0 bg-black/50"></div> {/* Overlay for readability */}
       </div>
 
