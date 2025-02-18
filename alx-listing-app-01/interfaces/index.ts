@@ -19,6 +19,7 @@ export interface PropertyProps {
   offers: Offers;
   image: string;
   discount: string;
+  description: string;
 }
 
 export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
@@ -39,6 +40,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image1.jpg",
     discount: "",
+    description:"welcome"
   },
   {
     name: "Mountain Escape Chalet",
@@ -57,6 +59,7 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     },
     image: "https://example.com/image2.jpg",
     discount: "30",
+    description:"welcome"
   },
 
 ];
